@@ -30,12 +30,16 @@ this output:
 Make sure you have an Microsoft 365 - Excel installed. 
 
 ## Usage
-you can find excel file under VBA Challenge 
-after downloading excel file, open multiple_year_stock-data
-on the excel tab, open developer, click on visual basic editor
+1.You can find excel file under VBA Challenge 
+2.After downloading excel file, open multiple_year_stock-data
+3.On the excel tab, open developer, click on visual basic editor
+4. run the multiple_year_stock.vba for the vba code
+5. should be able to loop through all worksheets
+ Results should match images provided
 
-## License
- i dont think it is licensed.
+ {Remove any existing conditional formatting in Column J (Quarterly Change)
+        ws.Range("K2:K" & lastrow).FormatConditions.Delete}
 
-## Project status
-Sstill currrently working on it.
+        the conditional format from the Quarterly change was getting extended to percent change, hence formatConditions.Delete
+        for any formatting in column K
+(referenced from Chatgpt)
