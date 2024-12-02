@@ -42,7 +42,7 @@ ws.Range("K1").Value = "Percent change"
 ws.Range("L1").Value = "TotalStockVolume"
 
 
- ' Remove any existing conditional formatting in Column J (Quarterly Change)
+ ' Remove any existing conditional formatting in Column K (Percent Change)
         ws.Range("K2:K" & lastrow).FormatConditions.Delete
 
 'initialize variables
@@ -74,13 +74,8 @@ End If
 
 If firstOpen <> 0 Then
 Percentchange = (QuarterlyChange / firstOpen) * 100
-
-
-
-
    Else
 Percentagechange = 0
-
 End If
 
 ws.Cells(nextindex, 9).Value = ticker
@@ -88,12 +83,7 @@ ws.Cells(nextindex, 10).Value = QuarterlyChange
 ws.Cells(nextindex, 11).Value = Percentchange / 100
 ws.Cells(nextindex, 11).NumberFormat = "0.00%"
             
-
-
 ws.Cells(nextindex, 12).Value = TotalStockVolume
-
-
-
 
 'increment to next ticker
 
@@ -108,7 +98,6 @@ ws.Cells(nextindex, 12).Value = TotalStockVolume
   TotalStockVolume = 0
   End If
   
- 
   
   TotalStockVolume = TotalStockVolume + ws.Cells(i, 7).Value
   
