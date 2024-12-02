@@ -20,8 +20,12 @@ i used windows 10, Microsoft 365. make sure it is in this environment
 conditional format to look like this:
 ![alt text](image.png)
 
+ This Code RUNS the RESULTS FOR:
+![alt text](Part_of_code.png)
 
 
+this output:
+![alt text](code_results.png)
 ## Installation
 Make sure you have an Microsoft 365 - Excel installed. 
 
